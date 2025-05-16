@@ -1,167 +1,190 @@
 'use client';
-
+import Link from 'next/link';
 import React, { useState } from 'react';
 import {
-    FaPhoneAlt,
-    FaEnvelope,
-    FaFacebookF,
-    FaInstagram,
-    FaLinkedinIn,
-    FaBars,
-    FaTimes,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaBars,
+  FaTimes,
 } from 'react-icons/fa';
 
 const Navbar = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
-    const [isIndustriesDropdownOpen, setIsIndustriesDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [isIndustriesDropdownOpen, setIsIndustriesDropdownOpen] = useState(false);
 
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-    const handleServicesMouseEnter = () => {
-        setIsServicesDropdownOpen(true);
-    };
+  const services = [
+    { name: '3D Laser Scanning', path: '/services/LaserScanning' },
+    { name: 'Lidar Data Processing', path: '/services/LidarData' },
+    { name: '3D Cad Mod Modelling', path: '/services/CadModelling' },
+    { name: '3D BIM Modelling', path: '/services/BimModelling' },
+    { name: 'Plant Modelling', path: '/services/PlantModelling' },
+    { name: '3D Mesh Model', path: '/services/MeshModel' },
+    { name: '3D Virtual Reality', path: '/services/VirtualReality' },
+    { name: 'Mobile Mapping', path: '/services/MobileMapping' },
+    { name: 'Non-Destructive Testing (NDT)', path: '/services/NDT' },
+    { name: 'Project Based Training', path: '/services/Training' },
+  ];
 
-    const handleServicesMouseLeave = () => {
-        setIsServicesDropdownOpen(false);
-    };
+  const industries = [
+    { name: 'Oil & Gas', path: '/industries/oil-gas' },
+    { name: 'Offshore and Marine', path: '/industries/offshore-marine' },
+    { name: 'Architecture and Construction', path: '/industries/architecture-construction' },
+    { name: 'Heritage', path: '/industries/heritage' },
+    { name: 'Ship Building', path: '/industries/ship-building' },
+    { name: 'Aviation', path: '/industries/aviation' },
+    { name: 'Mining and Tunneling', path: '/industries/mining-tunneling' },
+    { name: 'Wind Power', path: '/industries/wind-power' },
+    { name: 'Urban Planning', path: '/industries/urban-planning' },
+    { name: 'Reverse Engineering', path: '/industries/reverse-engineering' },
+  ];
 
-    const handleIndustriesMouseEnter = () => {
-        setIsIndustriesDropdownOpen(true);
-    };
 
-    const handleIndustriesMouseLeave = () => {
-        setIsIndustriesDropdownOpen(false);
-    };
-
-    const services = [
-        '3D Laser Scanning',
-        'Lidar Data Processing',
-        '3D Cad Mod Modelling',
-        '3D BIM Modelling',
-        'Plant Modelling',
-        '3D Mesh Model',
-        '3D Virtual Reality',
-        'Mobile Mapping',
-        'Non-Destructive Testing (NDT)',
-        'Project Based Training',
-    ];
-
-    const industries = [
-        'Oil & Gas',
-        'Offshore and Marine',
-        'Architecture and Construction',
-        'Heritage',
-        'Ship Building',
-        'Aviation',
-        'Mining and Tunneling',
-        'Wind Power',
-        'Urban Planning',
-        'Reverse Engineering',
-    ];
-
-    return (
-        <div className="w-full">
-            {/* Top bar */}
-            <div className="bg-blue-900 text-white text-sm flex justify-between items-center px-4 py-2">
-                <div className="flex flex-col md:flex-row md:space-x-6 space-y-1 md:space-y-0">
-                    <a href="tel:+918889013444" className="flex items-center gap-1 hover:underline">
-                        <FaPhoneAlt /> +91 8889013444
-                    </a>
-                    <a href="mailto:pramanengineering12@gmail.com" className="flex items-center gap-1 hover:underline">
-                        <FaEnvelope /> pramanengineering12@gmail.com
-                    </a>
-                </div>
-                <div className="flex items-center gap-3 mt-2 md:mt-0">
-                    <button className="bg-lime-400 text-black px-3 py-1 rounded hover:bg-lime-500">
-                        Quick Inquiry
-                    </button>
-                    <a href="#" aria-label="Facebook" className="hover:text-lime-300"><FaFacebookF /></a>
-                    <a href="#" aria-label="Instagram" className="hover:text-lime-300"><FaInstagram /></a>
-                    <a href="#" aria-label="LinkedIn" className="hover:text-lime-300"><FaLinkedinIn /></a>
-                </div>
-            </div>
-
-            {/* Main nav */}
-            <div className="flex justify-between items-center px-6 py-4 shadow-md relative bg-white">
-                {/* Logo */}
-                <div className="text-xl md:text-2xl font-bold text-blue-700">
-                    Praman<span className="text-green-500">Engineering Services</span>
-                </div>
-
-                {/* Desktop nav links */}
-                <div className="hidden md:flex space-x-6 text-sm font-medium">
-                    <a href="#" className="hover:text-blue-600">Home</a>
-                    <a href="#" className="hover:text-blue-600">About Us</a>
-                    <div
-                        className="relative"
-                        onMouseEnter={handleServicesMouseEnter}
-                        onMouseLeave={handleServicesMouseLeave}
-                    >
-                        <a href="#" className="hover:text-blue-600">Services</a>
-                        {isServicesDropdownOpen && (
-                            <div className="absolute top-full left-0 bg-white shadow-md rounded-md mt-1 py-1 w-50 z-10">
-                                {services.map((service, index) => (
-                                    <a
-                                        key={index}
-                                        href="#"
-                                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
-                                    >
-                                        {service}
-                                    </a>
-                                ))}
-                            </div>
-                        )}
-                    </div>
-                    <div
-                        className="relative"
-                        onMouseEnter={handleIndustriesMouseEnter}
-                        onMouseLeave={handleIndustriesMouseLeave}
-                    >
-                        <a href="#" className="hover:text-blue-600">Industries</a>
-                        {isIndustriesDropdownOpen && (
-                            <div className="absolute top-full left-0 bg-white shadow-md rounded-md mt-1 py-1 w-48 z-10">
-                                {industries.map((industry, index) => (
-                                    <a
-                                        key={index}
-                                        href="#"
-                                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
-                                    >
-                                        {industry}
-                                    </a>
-                                ))}
-                            </div>
-                        )}
-                    </div>
-                    <a href="#" className="hover:text-blue-600">Projects</a>
-                    <a href="#" className="hover:text-blue-600">Blog</a>
-                    <a href="#" className="hover:text-blue-600">Contact Us</a>
-                </div>
-
-                {/* Hamburger icon for mobile */}
-                <div className="md:hidden text-xl cursor-pointer" onClick={toggleMobileMenu}>
-                    {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
-                </div>
-
-                {/* Mobile dropdown menu */}
-                {isMobileMenuOpen && (
-                    <div className="absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 z-10 md:hidden">
-                        <div className="flex flex-col space-y-4 text-sm font-medium">
-                            <a href="#" className="hover:text-blue-600">Home</a>
-                            <a href="#" className="hover:text-blue-600">About Us</a>
-                            <a href="#" className="hover:text-blue-600">Services</a>
-                            <a href="#" className="hover:text-blue-600">Industries</a>
-                            <a href="#" className="hover:text-blue-600">Projects</a>
-                            <a href="#" className="hover:text-blue-600">Blog</a>
-                            <a href="#" className="hover:text-blue-600">Contact Us</a>
-                        </div>
-                    </div>
-                )}
-            </div>
+  return (
+    <div className="w-full">
+      {/* Top Bar */}
+      <div className="bg-blue-900 text-white text-sm flex justify-between items-center px-4 py-2">
+        <div className="flex flex-col md:flex-row md:space-x-6 space-y-1 md:space-y-0">
+          <a href="tel:+918889013444" className="flex items-center gap-1 hover:underline">
+            <FaPhoneAlt /> +91 8889013444
+          </a>
+          <a href="mailto:pramanengineering12@gmail.com" className="flex items-center gap-1 hover:underline">
+            <FaEnvelope /> pramanengineering12@gmail.com
+          </a>
         </div>
-    );
+        <div className="flex items-center gap-3 mt-2 md:mt-0">
+          <button className="bg-lime-400 text-black px-3 py-1 rounded hover:bg-lime-500">
+            Quick Inquiry
+          </button>
+          <a href="#" aria-label="Facebook" className="hover:text-lime-300"><FaFacebookF /></a>
+          <a href="#" aria-label="Instagram" className="hover:text-lime-300"><FaInstagram /></a>
+          <a href="#" aria-label="LinkedIn" className="hover:text-lime-300"><FaLinkedinIn /></a>
+        </div>
+      </div>
+
+      {/* Navbar Main */}
+      <div className="flex justify-between items-center px-6 py-4 shadow-md bg-white relative">
+        <div className="text-xl md:text-2xl font-bold text-blue-700">
+          Praman<span className="text-green-500">Engineering Services</span>
+        </div>
+
+        <div className="hidden md:flex space-x-6 text-sm font-medium">
+          <Link href="/Home" className="hover:text-blue-600">Home</Link>
+          <Link href="/About" className="hover:text-blue-600">About Us</Link>
+
+          {/* Services Dropdown */}
+          <div className="relative">
+            <span
+              onClick={() => setIsServicesDropdownOpen(prev => !prev)}
+              className="hover:text-blue-600 cursor-pointer"
+            >
+              Services
+            </span>
+
+            {isServicesDropdownOpen && (
+              <div className="absolute top-full left-0 bg-white shadow-md rounded-md mt-1 py-1 w-60 z-10">
+                {services.map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.path}
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Industries Dropdown */}
+          <div className="relative">
+            <span
+              onClick={() => setIsIndustriesDropdownOpen(prev => !prev)}
+              className="hover:text-blue-600 cursor-pointer"
+            >
+              Industries
+            </span>
+
+            {isIndustriesDropdownOpen && (
+              <div className="absolute top-full left-0 bg-white shadow-md rounded-md mt-1 py-1 w-48 z-10">
+                {industries.map((industry, index) => (
+                  <Link
+                    key={index}
+                    href={industry.path}
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
+                  >
+                    {industry.name}
+                  </Link>
+
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link href="/Project" className="hover:text-blue-600">Projects</Link>
+          <Link href="/Blog" className="hover:text-blue-600">Blog</Link>
+          <Link href="/ContactUs" className="hover:text-blue-600">Contact Us</Link>
+        </div>
+
+        {/* Mobile Icon */}
+        <div className="md:hidden text-xl cursor-pointer" onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 z-10 md:hidden">
+            <div className="flex flex-col space-y-4 text-sm font-medium">
+              <Link href="/" className="hover:text-blue-600">Home</Link>
+              <Link href="/About" className="hover:text-blue-600">About Us</Link>
+
+              <details className="group">
+                <summary className="cursor-pointer hover:text-blue-600">Services</summary>
+                <div className="pl-4 mt-1 space-y-1">
+                  {services.map((service, index) => (
+                    <Link
+                      key={index}
+                      href={service.path}
+                      className="block text-gray-700 hover:text-blue-600 text-sm"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              </details>
+
+              <details className="group">
+                <summary className="cursor-pointer hover:text-blue-600">Industries</summary>
+                <div className="pl-4 mt-1 space-y-1">
+                  {industries.map((industry, index) => (
+                    <Link
+                      key={index}
+                      href={industry.path}
+                      className="block text-gray-700 hover:text-blue-600 text-sm"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {industry.name}
+                    </Link>
+
+                  ))}
+                </div>
+              </details>
+
+              <Link href="/Project" className="hover:text-blue-600">Projects</Link>
+              <Link href="/Blog" className="hover:text-blue-600">Blog</Link>
+              <Link href="/ContactUs" className="hover:text-blue-600">Contact Us</Link>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

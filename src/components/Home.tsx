@@ -9,13 +9,15 @@ const images = [
   '/images/home2.webp',
   '/images/home3.webp',
   '/images/home5.webp',
+  '/images/p4.webp',
+  '/images/home6.webp'
 ];
 
 const containerVariants = {
   initial: {},
   animate: {
     transition: {
-      staggerChildren: 0.3, // Stagger the animations of children
+      staggerChildren: 0.3, 
     },
   },
 };

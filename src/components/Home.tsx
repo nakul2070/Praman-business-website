@@ -66,14 +66,14 @@ export default function Hero() {
       {/* Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-5 top-1/2 transform -translate-y-1/2 z-20 bg-opacity-50 p-2 rounded-full hover:bg-opacity-75"
+        className="absolute left-5 top-1/2 transform -translate-y-1/2 z-10 bg-opacity-50 p-2 rounded-full hover:bg-opacity-75"
       >
         <ChevronLeft size={32} />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-5 top-1/2 transform -translate-y-1/2 z-20 bg-opacity-50 p-2 rounded-full hover:bg-opacity-75"
+        className="absolute right-5 top-1/2 transform -translate-y-1/2 z-10 bg-opacity-50 p-2 rounded-full hover:bg-opacity-75"
       >
         <ChevronRight size={32} />
       </button>

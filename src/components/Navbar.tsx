@@ -105,7 +105,7 @@ const Navbar = () => {
             </span>
 
             {isServicesDropdownOpen && (
-              <div className="absolute top-full left-0 bg-white shadow-md rounded-md mt-1 py-1 w-60 z-10">
+              <div className="absolute top-full left-0 bg-white shadow-md rounded-md mt-1 py-1 w-60 z-30">
                 {services.map((service, index) => (
                   <Link
                     key={index}
@@ -129,7 +129,7 @@ const Navbar = () => {
             </span>
 
             {isIndustriesDropdownOpen && (
-              <div className="absolute top-full left-0 bg-white shadow-md rounded-md mt-1 py-1 w-48 z-10">
+              <div className="absolute top-full left-0 bg-white shadow-md rounded-md mt-1 py-1 w-48 z-30">
                 {industries.map((industry, index) => (
                   <Link
                     key={index}
@@ -156,7 +156,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 z-10 md:hidden">
+          <div className="absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 z-30 md:hidden">
             <div className="flex flex-col space-y-4 text-sm font-medium">
               <Link href="/" className="text-black hover:text-blue-600">Home</Link>
               <Link href="/About" className="text-black hover:text-blue-600">About Us</Link>

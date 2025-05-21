@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-6 text-sm font-medium">
-          <Link href="/Home" className="hover:text-blue-600">Home</Link>
+          <Link href="/Home" className="text-black-700 hover:text-blue-600">Home</Link>
           <Link href="/About" className="hover:text-blue-600">About Us</Link>
 
           {/* Services Dropdown */}
@@ -158,11 +158,11 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 z-10 md:hidden">
             <div className="flex flex-col space-y-4 text-sm font-medium">
-              <Link href="/" className="hover:text-blue-600">Home</Link>
-              <Link href="/About" className="hover:text-blue-600">About Us</Link>
+              <Link href="/" className="text-black hover:text-blue-600">Home</Link>
+              <Link href="/About" className="text-black hover:text-blue-600">About Us</Link>
 
               <details className="group">
-                <summary className="cursor-pointer hover:text-blue-600">Services</summary>
+                <summary className="cursor-pointer text-black hover:text-blue-600">Services</summary>
                 <div className="pl-4 mt-1 space-y-1">
                   {services.map((service, index) => (
                     <Link
@@ -178,7 +178,7 @@ const Navbar = () => {
               </details>
 
               <details className="group">
-                <summary className="cursor-pointer hover:text-blue-600">Industries</summary>
+                <summary className="cursor-pointer text-black hover:text-blue-600">Industries</summary>
                 <div className="pl-4 mt-1 space-y-1">
                   {industries.map((industry, index) => (
                     <Link
@@ -194,9 +194,9 @@ const Navbar = () => {
                 </div>
               </details>
 
-              <Link href="/Project" className="hover:text-blue-600">Projects</Link>
-              <Link href="/Blog" className="hover:text-blue-600">Blog</Link>
-              <Link href="/ContactUs" className="hover:text-blue-600">Contact Us</Link>
+              <Link href="/Project" className=" text-black hover:text-blue-600">Projects</Link>
+              <Link href="/Blog" className="text-black hover:text-blue-600">Blog</Link>
+              <Link href="/ContactUs" className="text-black hover:text-blue-600">Contact Us</Link>
             </div>
           </div>
         )}

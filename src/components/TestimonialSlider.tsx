@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -72,11 +72,9 @@ export default function TestimonialSlider() {
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-14 h-14 border-2 border-dotted border-blue-600 rounded-sm flex items-center justify-center">
-                  <img
-                    src="/images/user.png"
-                    alt="avatar"
-                    className="w-10 h-10"
-                  />
+
+                  <Image src="/images/testimonial.jpg" alt="Testimonial" width={600} height={400} />
+
                 </div>
                 <div>
                   <h3 className="text-green-600 font-semibold text-lg">{t.name}</h3>

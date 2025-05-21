@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+
 export async function POST(req: Request) {
     const data = await req.json();
     const { name, email, company, phone, message } = data;
@@ -72,8 +73,9 @@ await transporter.sendMail({
         });
 
         return NextResponse.json({ success: true });
-    } catch (error: any) {
-        console.error('Email error:', error.message || error);
-        return NextResponse.json({ success: false, error: error.message || 'Failed to send email.' }, { status: 500 });
-    }
+    } catch (error: unknown) {
+    const errMsg = error instanceof Error ? error.message : 'Unknown error';
+    console.error('Email error:', errMsg);
+    return NextResponse.json({ success: false, error: errMsg }, { status: 500 });
+}
 }

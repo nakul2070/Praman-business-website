@@ -46,7 +46,7 @@ const ContactForm = () => {
                     text: result.error || 'Something went wrong.',
                 });
             }
-        } catch (error) {
+        } catch  {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',

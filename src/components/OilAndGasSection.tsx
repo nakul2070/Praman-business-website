@@ -70,9 +70,9 @@ const OilAndGasSection = () => {
           {/* Get In Touch */}
           <div className="bg-white p-5 shadow rounded-lg">
             <h4 className="text-green-700 font-bold mb-4 border-b pb-2">GET IN TOUCH</h4>
-            <button className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-2 px-4 rounded transition">
+            <a href='/ContactUs'>  <button className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-2 px-4 rounded transition">
               Get In Touch
-            </button>
+            </button></a>
           </div>
         </div>
       </div>

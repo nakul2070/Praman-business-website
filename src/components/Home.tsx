@@ -100,12 +100,13 @@ export default function Hero() {
     >
       BEST LiDAR AND PHOTOGRAMMETRY GROUP
     </motion.h2>
+    <a href="/ContactUs">
     <motion.button
       variants={buttonVariants}
       className="bg-blue-600 px-6 py-2 rounded hover:bg-blue-700 text-white font-medium"
     >
       Contact Now
-    </motion.button>
+    </motion.button></a>
   </motion.div>
 </AnimatePresence>
 

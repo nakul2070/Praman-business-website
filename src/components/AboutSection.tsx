@@ -34,9 +34,11 @@ const AboutSection = () => {
             architecture, <span className="text-blue-600 underline">heritage</span>, FMCG and large-scale urban regeneration projects.
             We have highly skilled CAD engineers which allows us to process all our data in-house.
           </p>
-          <button className="mt-6 px-5 py-2 sm:px-6 sm:py-3 bg-blue-800 text-white text-sm sm:text-base rounded hover:bg-blue-600 transition duration-300">
-            Read More
-          </button>
+          <a href="/About">
+  <button className="mt-6 px-5 py-2 sm:px-6 sm:py-3 bg-blue-800 text-white text-sm sm:text-base rounded hover:bg-blue-600 transition duration-300">
+    Read More
+  </button>
+</a>
         </div>
       </div>
     </section>

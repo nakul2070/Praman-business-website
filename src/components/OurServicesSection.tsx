@@ -49,9 +49,10 @@ const ServicesOverview = () => {
                 your particular need. Clients include Oil & Gas, Power stations,
                 Steel, Ship building, Mining, etc.
               </p>
+              <a href="/services/LaserScanning">
               <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md">
                 Learn More
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
@@ -85,9 +86,10 @@ const ServicesOverview = () => {
                 elements. 2D plans, sections and elevations can be generated
                 automatically from any defined position or direction.
               </p>
+              <a href="/services/BimModelling">
               <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md">
                 Learn More
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
@@ -126,9 +128,10 @@ const ServicesOverview = () => {
                 requirements. You can alter map projections, add points, lines,
                 and polygons, and edit attribute data with the press of a button.
               </p>
+              <a href="/services/MobileMapping">
               <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md">
                 Learn More
-              </button>
+              </button></a>
             </div>
           </div>
         </div>

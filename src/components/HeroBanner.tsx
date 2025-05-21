@@ -24,9 +24,13 @@ const HeroBanner = () => {
         <p className="text-sm sm:text-lg md:text-2xl lg:text-3xl font-medium mb-5 max-w-xl sm:max-w-2xl">
           WILL HELP YOU MAKE AWESOME DESIGN FOR YOUR PROJECT
         </p>
-        <button className="bg-green-500 hover:bg-green-600 text-white font-semibold text-sm sm:text-base lg:text-lg py-2 px-6 rounded-md shadow-md transition duration-300">
+        <a
+          href="/ContactUs"
+          className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold text-sm sm:text-base lg:text-lg py-2 px-6 rounded-md shadow-md transition duration-300"
+        >
           Get In Touch
-        </button>
+        </a>
+
       </div>
     </div>
   );

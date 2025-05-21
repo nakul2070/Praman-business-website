@@ -46,26 +46,44 @@ const Navbar = () => {
 
 
   return (
-    <div className="w-full">
-      {/* Top Bar */}
-      <div className="bg-blue-900 text-white text-sm flex justify-between items-center px-4 py-2">
-        <div className="flex flex-col md:flex-row md:space-x-6 space-y-1 md:space-y-0">
-          <a href="tel:+918889013444" className="flex items-center gap-1 hover:underline">
-            <FaPhoneAlt /> +91 8889013444
-          </a>
-          <a href="mailto:pramanengineering12@gmail.com" className="flex items-center gap-1 hover:underline">
-            <FaEnvelope /> pramanengineering12@gmail.com
-          </a>
-        </div>
-        <div className="flex items-center gap-3 mt-2 md:mt-0">
-          <button className="bg-lime-400 text-black px-3 py-1 rounded hover:bg-lime-500">
-            Quick Inquiry
-          </button>
-          <a href="#" aria-label="Facebook" className="hover:text-lime-300"><FaFacebookF /></a>
-          <a href="#" aria-label="Instagram" className="hover:text-lime-300"><FaInstagram /></a>
-          <a href="#" aria-label="LinkedIn" className="hover:text-lime-300"><FaLinkedinIn /></a>
-        </div>
-      </div>
+   <div className="w-full">
+  {/* Top Bar */}
+  <div className="bg-blue-900 text-white text-xs sm:text-sm flex justify-between items-center px-2 sm:px-4 py-2 sm:py-2">
+    
+    {/* Left Side: Contact Info */}
+    <div className="flex flex-col md:flex-row md:space-x-6 space-y-1 md:space-y-0">
+      <a href="tel:+918889013444" className="flex items-center gap-1 sm:gap-2 hover:underline whitespace-nowrap">
+        <FaPhoneAlt className="text-sm sm:text-base" /> +91 8889013444
+      </a>
+      <a href="mailto:pramanengineering12@gmail.com" className="flex items-center gap-1 sm:gap-2 hover:underline whitespace-nowrap">
+        <FaEnvelope className="text-sm sm:text-base" /> pramanengineering12@gmail.com
+      </a>
+    </div>
+
+    {/* Right Side: Quick Inquiry + Social Icons */}
+    <div className="flex items-center gap-2 sm:gap-3 mt-1 md:mt-0">
+      <a href='/ContactUs'>        
+        <button className="bg-lime-400 text-black text-xs sm:text-sm px-2 sm:px-3 py-1 rounded hover:bg-lime-500">
+          Quick Inquiry
+        </button>
+      </a>
+      <a href="#" aria-label="Facebook" className="hover:text-lime-300">
+        <FaFacebookF className="text-sm sm:text-base" />
+      </a>
+      <a href="#" aria-label="Instagram" className="hover:text-lime-300">
+        <FaInstagram className="text-sm sm:text-base" />
+      </a>
+      <a href="#" aria-label="LinkedIn" className="hover:text-lime-300">
+        <FaLinkedinIn className="text-sm sm:text-base" />
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+
 
       {/* Navbar Main */}
       <div className="flex justify-between items-center px-6 py-4 shadow-md bg-white relative">

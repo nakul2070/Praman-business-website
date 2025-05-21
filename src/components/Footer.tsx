@@ -21,22 +21,22 @@ const Footer = () => {
             <div className="w-10 h-1 bg-[#85C12F] mb-4" />
             <ul className="space-y-1 text-gray-300 text-sm">
               <li>• 3D Laser Scanning</li>
-              <li>• Orthophotos</li>
+              
               <li>• 3D BIM Modelling</li>
-              <li>• BIM Modeling</li>
+              <li>• 3D Virtual Reality</li>
               <li>• Plant Modeling</li>
-              <li>• Smart City Modeling</li>
+              
               <li>• 3D Mesh Model</li>
             </ul>
           </div>
-          <div className="sm:mt-9 md:mt-10">
+          <div className="sm:mt-9 md:mt-15">
             <ul className="space-y-1 text-gray-300 text-sm">
               <li>• Lidar Data Processing</li>
-              <li>• Stockpile Volume Calculation</li>
-              <li>• 3D Virtual Reality</li>
+              
+              
               <li>• Mobile Mapping</li>
-              <li>• GIS Mapping</li>
-              <li>• Ground Penetrating Radar (GPR)</li>
+              
+              
               <li>• NDT</li>
               <li>• Project Based Training</li>
             </ul>

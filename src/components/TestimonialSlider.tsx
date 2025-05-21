@@ -73,7 +73,13 @@ export default function TestimonialSlider() {
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-14 h-14 border-2 border-dotted border-blue-600 rounded-sm flex items-center justify-center">
 
-                  <Image src="/images/testimonial.jpg" alt="Testimonial" width={600} height={400} />
+                  <Image
+                    src="/images/test.png"
+                    alt="Testimonial"
+                    width={300}       // ✅ Required
+                    height={300}      // ✅ Required
+                    className="rounded-full object-cover"
+                  />
 
                 </div>
                 <div>

@@ -113,12 +113,7 @@ const BimModelling = () => {
         </section>
       </div>
 
-      {/* CTA */}
-      <div className="text-center mt-12">
-        <button className="bg-blue-800 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-sm shadow">
-          Quick Inquiry
-        </button>
-      </div>
+    
     </div>
   );
 };

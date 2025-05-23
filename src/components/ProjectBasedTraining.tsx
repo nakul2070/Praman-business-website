@@ -23,7 +23,7 @@ const ProjectBasedTraining = () => {
           <span className="text-blue-500 font-medium">NDT</span>,{" "}
           <span className="text-blue-500 font-medium">GIS</span> Digital survey. We are providing the world class services for any project with the subject line with well experienced professionals.
         </p>
-        <p className="text-gray-700 mb-46">
+        <p className="text-gray-700 mb-36">
           We also provide the training for <span className="font-medium">Hardware</span> and <span className="font-medium">software</span> related to survey field.
           We have certified engineer for <span className="text-blue-500 font-medium">CAD</span> based software how can serve the good knowledge for{" "}
           <span className="text-blue-500 font-medium">BIM modelling</span> till{" "}

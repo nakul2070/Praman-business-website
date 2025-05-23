@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const HeritagePage = () => {
   return (
-    <div className="max-w-7xl mx-auto p-4 grid md:grid-cols-3 gap-6">
+    <div className="max-w-7xl mx-auto p-4 grid md:grid-cols-3 gap-6 bg-white">
 
       {/* Main Content */}
       <div className="md:col-span-2 space-y-6">
@@ -15,7 +15,7 @@ const HeritagePage = () => {
           className="rounded-md w-full object-cover"
         />
 
-        <div className="text-gray-700 space-y-4 text-sm leading-relaxed">
+        <div className=" space-y-4 text-sm leading-relaxed">
           <p className='text-black'>
             3D Pointshot provides quickly capturing highly accurate and detailed as-built conditions of historical
             structures and buildings with 3D Laser scanning technology. The 3D laser scanner technology has provided

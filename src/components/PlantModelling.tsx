@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const PlantModelling = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10">
+    <div className="max-w-5xl mx-auto px-4 py-10 bg-white">
       {/* Header */}
       <div className="flex flex-col md:flex-row gap-6">
         <Image
@@ -15,7 +15,7 @@ const PlantModelling = () => {
         />
         <div>
           <h1 className="text-3xl font-bold text-green-800 mb-4">Plant Modeling</h1>
-          <p className="text-gray-700 text-base leading-relaxed">
+          <p className="text-gray-700 text-base leading-relaxed text-black">
             3D Modelling Services helps in Plant Design. These days, 3D plant modeling services are used significantly for plant designs to improve engineering productivity and reduce overhead costs and time.
           </p>
         </div>
@@ -26,7 +26,7 @@ const PlantModelling = () => {
 
         <section>
           <h2 className="text-xl font-semibold text-green-700 mb-2">Advantages of 3D Modelling service on Plant Design:</h2>
-          <ul className="list-disc pl-5 space-y-1">
+          <ul className="list-disc pl-5 space-y-1 text-black">
             <li><strong>Visualization:</strong> Ability to visualize scenarios and change according to need during the design process.</li>
             <li><strong>Presentation:</strong> 3D service makes it easy to design proposals or reviews by creating model renderings and animations.</li>
             <li><strong>Review:</strong> Gives the ability to go through the 3D plant model and review any changes.</li>
@@ -50,7 +50,7 @@ const PlantModelling = () => {
           <h2 className="text-xl font-semibold text-green-700 mt-6 mb-2">Know about the Piping and Instrumentation Diagram Quality, Sustainability, Time and Cost:</h2>
 
           <h3 className="text-lg font-medium mt-4 text-gray-900">3D Model – Piping and Instrumentation Diagram Quality</h3>
-          <ul className="list-disc pl-5 space-y-1">
+          <ul className="list-disc pl-5 space-y-1 text-black">
             <li>Visualization of complex designs via intelligent objects.</li>
             <li>Helps to avoid major conflicts in design, saves time and cost, and reduces the need for many site visits to the plant design engineer.</li>
             <li>3D services identify flaws before construction begins.</li>
@@ -58,7 +58,7 @@ const PlantModelling = () => {
           </ul>
 
           <h3 className="text-lg font-medium mt-6 text-gray-900">3D Model – Time and money</h3>
-          <p>
+          <p className='text-black'>
             Even before the plant construction begins, engineers can visualize the entire plant and reduce design costs and conflicts practically both for better efficiency and better-optimized design. 3D Pointshot, a 3D modeling service of plant design engineering, covers their efficient and effective solution and enables them to make correct strategic decisions by engaging in the designing process from the foundation stage and eliminating the scope of error in design at an early process.
           </p>
         </section>

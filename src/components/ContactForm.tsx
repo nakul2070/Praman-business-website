@@ -69,14 +69,14 @@ const ContactForm = () => {
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input name="name" value={formData.name} onChange={handleChange} required placeholder="Name" className="border p-3 w-full" />
-                        <input name="email" value={formData.email} onChange={handleChange} required type="email" placeholder="Email address" className="border p-3 w-full" />
+                        <input name="name" value={formData.name} onChange={handleChange} required placeholder="Name" className="border p-3 w-full text-black" />
+                        <input name="email" value={formData.email} onChange={handleChange} required type="email" placeholder="Email address" className="border p-3 text-black w-full" />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input name="company" value={formData.company} onChange={handleChange} placeholder="Company" className="border p-3 w-full" />
-                        <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" className="border p-3 w-full" />
+                        <input name="company" value={formData.company} onChange={handleChange} placeholder="Company" className="border p-3 w-full text-black text-black" />
+                        <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" className="border p-3 w-full text-black" />
                     </div>
-                    <textarea name="message" value={formData.message} onChange={handleChange} required placeholder="Enter your message..." className="border p-3 w-full h-32" />
+                    <textarea name="message" value={formData.message} onChange={handleChange} required placeholder="Enter your message..." className="border p-3 w-full text-black h-32" />
                     <button type="submit" disabled={loading} className={`bg-blue-800 text-white px-6 py-2 rounded-full font-bold ${loading ? 'opacity-60' : ''}`}>
                         {loading ? 'Submitting...' : 'SUBMIT REQUEST'}
                     </button>

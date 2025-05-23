@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const WindPowerPage = () => {
   return (
-    <div className="max-w-7xl mx-auto p-4 grid md:grid-cols-3 gap-6">
+    <div className="max-w-7xl mx-auto p-4 grid md:grid-cols-3 gap-6 bg-white">
 
       {/* Main Content */}
       <div className="md:col-span-2 space-y-6">
@@ -17,15 +17,15 @@ const WindPowerPage = () => {
         />
 
         <div className="text-gray-700 space-y-4 text-sm leading-relaxed">
-          <p>
+          <p className='text-black'>
             3D Pointshot is serving the services for Wind power sector. As the need for electricity is rising by the day, it becomes important to find more convenient and efficient ways to harvest it. 3D scanning systems have been successfully employed in the power generation sectors of Gas & Steam turbines, Hydropower, Wind Energy, and Propulsion.
           </p>
 
-          <p>
+          <p className='text-black'>
             3D Scanner can be used for 3D inspection of towers, turbine hubs and rotor blades before they are shipped to the installation site and help to eliminate costly rework during installation.
           </p>
 
-          <p>
+          <p className='text-black'>
             Reverse engineering and inspection services speeds up R&D efforts, getting parts from drawing board to wind farm quickly and efficiently. Terrestrial 3D scanning solutions using systems such as the long-range 3D scanner for windmill installation rapidly provides information that translates to fast and seamless construction in the field. Reverse engineering is another area where 3D scanners are delivering greatly for the power industry.
           </p>
         </div>
@@ -34,7 +34,7 @@ const WindPowerPage = () => {
           <h2 className="text-green-600 font-semibold mb-2">
             Benefits of 3D Laser Scanning in Wind Power
           </h2>
-          <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+          <ul className="list-disc list-inside text-black text-sm space-y-1">
             <li>Survey large area quickly</li>
             <li>Quick, detailed and accurate results</li>
             <li>Cost effective</li>

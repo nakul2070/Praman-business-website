@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const MiningAndTunnelingPage = () => {
   return (
-    <div className="max-w-7xl mx-auto p-4 grid md:grid-cols-3 gap-6">
+    <div className="max-w-7xl mx-auto p-4 grid md:grid-cols-3 gap-6 bg-white">
 
       {/* Main Content */}
       <div className="md:col-span-2 space-y-6">
@@ -16,15 +16,15 @@ const MiningAndTunnelingPage = () => {
         />
 
         <div className="text-gray-700 space-y-4 text-sm leading-relaxed">
-          <p>
+          <p className='text-black'>
             3D Pointshot now provides the 3D Laser scanning services for Mining and Tunneling with very precise equipment. The main concern in mines is a security whether it’s a Gold mining or Coal mining. So Laser scanning technology is a very useful tool for Mining and Tunneling more secure by reducing the safety risk.
           </p>
 
-          <p>
+          <p className='text-black'>
             The digital mine provides up-to-date information on conditions, status and production quantities. One of the primary applications is computation of volumes, which requires definition of a reference surface located at the bottom of a tunnel segment. With help of 3D Laser scanner we can calculate the Stockpile volume, generate the contours and arrange a facility and asset management in Mines.
           </p>
 
-          <p>
+          <p className='text-black'>
             3D Scanner is capturing the real condition of mines with accurate measurement and capable to show the identity and record any cracks and fissures, compare these data to previous scans, and identify any areas of concern. This is an enormous contribution to mine safety and a safe work environment.
           </p>
         </div>
@@ -33,7 +33,7 @@ const MiningAndTunnelingPage = () => {
           <h2 className="text-green-600 font-semibold mb-2">
             Benefits of 3D Laser Scanning in Mining and Tunneling
           </h2>
-          <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+          <ul className="list-disc list-inside text-black text-sm space-y-1 ">
             <li>We can a scan without light in mines</li>
             <li>Provides more secure environment</li>
             <li>Required less resources and time</li>

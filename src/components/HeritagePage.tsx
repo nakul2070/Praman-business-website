@@ -16,14 +16,14 @@ const HeritagePage = () => {
         />
 
         <div className="text-gray-700 space-y-4 text-sm leading-relaxed">
-          <p>
+          <p className='text-black'>
             3D Pointshot provides quickly capturing highly accurate and detailed as-built conditions of historical
             structures and buildings with 3D Laser scanning technology. The 3D laser scanner technology has provided
             the advanced technology for surveying and documenting the heritage sites precisely without damaging its
             original structure or environment.
           </p>
 
-          <p>
+          <p className='text-black'>
             High-resolution 3D recordings of sites, monuments and artifacts allow us to monitor, study, disseminate and
             understand our shared cultural history – it is essential that the vast archives of 3D and color data are securely
             archived. An integral component of this work is to record surfaces and forms at the highest possible resolutions
@@ -36,8 +36,8 @@ const HeritagePage = () => {
           <h2 className="text-green-600 font-semibold mb-2">
             Benefits of 3D Laser Scanning in Heritage
           </h2>
-          <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-            <li><span className="text-blue-600">High precision and high detail</span></li>
+          <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 text-black">
+            <li><span className="text-black">High precision and high detail</span></li>
             <li>Orthophoto</li>
             <li>Cost effective</li>
             <li>Easy to use</li>

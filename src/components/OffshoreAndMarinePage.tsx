@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const OffshoreAndMarinePage = () => {
   return (
-    <div className="max-w-7xl mx-auto p-4 grid md:grid-cols-3 gap-6">
+    <div className="max-w-7xl mx-auto p-4 grid md:grid-cols-3 gap-6 bg-white">
       
       {/* Main Content */}
       <div className="md:col-span-2 space-y-6">
@@ -18,23 +18,23 @@ const OffshoreAndMarinePage = () => {
         <h1 className="text-2xl md:text-3xl font-bold text-blue-900">Offshore And Marine</h1>
 
         <div className="text-gray-700 space-y-4 text-sm leading-relaxed">
-          <p>
+          <p className='text-black'>
             We specialize in <span className="text-blue-700 underline">3D laser scanning</span> for the maritime and industrial engineering and design applications. 3D Pointshoot used a 3D Laser scanner to capture the real condition of the offshore site.
           </p>
 
-          <p>
+          <p className='text-black'>
             A better approach involves scanning ship spaces with a 3D laser scanner to create a very detailed and error free 3D point cloud data. For this type of projects high speed laser scanners are quite suitable for this purpose as they can take millions of measurements in just a few minutes.
           </p>
 
-          <p>
+          <p className='text-black'>
             As knowing the time critical nature of the <span className="text-blue-700 underline">Oil and Gas</span> sector we mobilize a team quickly and ready for travel anywhere.
           </p>
 
-          <p>
+          <p className='text-black'>
             We also provide our services for Clash detection, Piping routing, Equipment positioning and space management. The marine Industry is in great need of applying emerging technologies like 3D Laser Scanning to a myriad of new tasks.
           </p>
 
-          <p>
+          <p className='text-black'>
             Our team are trained and experienced professionals specializing in 3D scanning and <span className="text-blue-700 underline">CAD modelling</span> of point cloud data processing for offshore installations and vessels which are very often compact and dense with details. We do a 3D Non-Intelligent and Intelligent model from Point cloud data compatible with CADMATIC, AVEVA PDMS, <span className="text-blue-700 underline">AutoCAD</span> Plant 3D and any other platform.
           </p>
         </div>
@@ -43,7 +43,7 @@ const OffshoreAndMarinePage = () => {
           <h2 className="text-green-600 font-semibold mb-2">
             Benefits of 3D Laser Scanning in Offshore And Marine
           </h2>
-          <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+          <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 text-black">
             <li>more comprehensive and precise compared to hand measurements.</li>
             <li>Safety</li>
             <li>Reduces or eliminates the need for follow-up site visits</li>

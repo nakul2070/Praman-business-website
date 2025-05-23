@@ -72,7 +72,8 @@ const BlogGrid: React.FC = () => {
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <h3 className="text-md font-semibold mb-2 line-clamp-3">{blog.title}</h3>
+              <h3 className="text-md font-semibold mb-2 line-clamp-3 text-black">{blog.title}</h3>
+
               <Link href={blog.link} className="text-blue-600 hover:underline text-sm">
                 Read More
               </Link>

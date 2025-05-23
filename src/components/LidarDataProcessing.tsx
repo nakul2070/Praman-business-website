@@ -4,7 +4,7 @@ import React from "react";
 
 const LidarData: React.FC = () => {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-10 space-y-10">
+    <div className="max-w-5xl mx-auto px-6 py-10 space-y-10 bg-white">
       <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow">
         <Image
           src="/images/L1.png" 
@@ -16,7 +16,7 @@ const LidarData: React.FC = () => {
 
       <section className="bg-white p-6 rounded-2xl shadow space-y-4">
         <h1 className="text-3xl font-bold text-blue-800">Lidar Data Processing</h1>
-        <p className="text-gray-700">
+        <p className="text-gray-700 ">
           For a variety of reasons, the usage of Lidar data processing has exploded in recent years. Lidar technology aids in obtaining higher-quality data than previous low-cost photogrammetric approaches. As a result, automatically gathering data in a dense manner, has resulted in a significant accomplishment.
         </p>
         <p className="text-gray-700">

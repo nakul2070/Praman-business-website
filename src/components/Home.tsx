@@ -94,12 +94,13 @@ export default function Hero() {
     >
       WE BUILD YOUR DESIGN
     </motion.h1>
-    <motion.h2
-      variants={heading2Variants}
-      className="text-green-400 text-2xl md:text-4xl font-semibold mb-6"
-    >
-      BEST LiDAR AND PHOTOGRAMMETRY GROUP
-    </motion.h2>
+<motion.h2
+  variants={heading2Variants}
+  className="text-sm sm:text-xl md:text-2xl lg:text-4xl text-green-400 font-semibold mb-6"
+>
+  BEST LiDAR AND PHOTOGRAMMETRY GROUP
+</motion.h2>
+
     <a href="/ContactUs">
     <motion.button
       variants={buttonVariants}
